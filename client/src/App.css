@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    font-family: "Comfortaa", sans-serif;
+    font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.loggedOutBackground {
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.loggedInBackground {
+    background-image: url('./assets/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+.nav {
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the navbar is positioned relative to use z-index */
+    z-index: 1000; /* Set a high z-index value to ensure it appears in front */
+}
+
+
+.nav > ul {
+    color: wheat;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav > ul > li {
+    margin: 0 1rem; 
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.nav>ul>li:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px beige;
+}
+
+
+.centered{
+    position: absolute;
+    top: 0;
+    width: 110vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 4.5%;
+    /* background-color: red; */
+    width: 70vw;
+    height: fit-content;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.45);
+    font-weight: 200;
+    padding: 1.2%;
+    font-size: 3rem;
+    color: white;
+    border: 1.5px solid white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    /* font-size: 1.2rem; */
+}
+
+.title:hover {
+    border-color: white; 
+    box-shadow: 0 0 10px 2px white; 
+    text-shadow: 0 0 10px white; 
+}
+
+.btns {
+    padding: 2.5%;
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btns > button {
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    border: 1px solid white;
+    background-color: #333; /* Dark gray background */
+    color: white;
+    font-size: 1.2rem;
+    padding: 4%;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btns > button:hover {
+    background-color: black; 
+    box-shadow: 0 0 10px 2px white; 
+}

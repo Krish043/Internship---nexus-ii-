@@ -1,0 +1,45 @@
+/*
+
+.imgcontainer {
+    display: flex;
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    height: 30vh; 
+    width: 20vw;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .imgcontainer img {
+    flex: 0 0 auto;
+    height: 50vh; 
+    height: auto;
+  } */
+  
+
+  .imgcontainer {
+    display: flex;
+    overflow: hidden; /* Hide the scrollbar */
+    width: 100%; /* Ensure the container takes the full width of the parent */
+    scroll-snap-type: x mandatory;
+  }
+  
+  .imgcontainer img {
+    flex-shrink: 0;
+    width: 100%; /* Make sure each image fits within the container width */
+    height: auto; /* Maintain aspect ratio */
+    scroll-snap-align: start;
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+  .imgcontainer>img :hover{
+    box-shadow: 0px 0px 10px #c45508 ;
+  }
+  
+  .imgcontainer::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for WebKit browsers */
+  }
+  
+  .imgcontainer {
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
